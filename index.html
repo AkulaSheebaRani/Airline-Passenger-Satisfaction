@@ -1,0 +1,114 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Airline Passenger Satisfaction</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <main class="container">
+        <h1>Airline Passenger Satisfaction</h1>
+        <p>Enter passenger and flight details to predict satisfaction.</p>
+
+        <form id="prediction-form">
+
+            <h2>Passenger Details</h2>
+
+            <label>Gender</label>
+            <select id="Gender">
+                <option>Male</option>
+                <option>Female</option>
+            </select>
+
+            <label>Customer Type</label>
+            <select id="Customer_Type">
+                <option>Loyal Customer</option>
+                <option>disloyal Customer</option>
+            </select>
+
+            <label>Age</label>
+            <input id="Age" type="number" min="13" max="80" value="13" required>
+
+            <label>Type of Travel</label>
+            <select id="Type_of_Travel">
+                <option>Personal Travel</option>
+                <option>Business travel</option>
+            </select>
+
+            <label>Class</label>
+            <select id="Class">
+                <option>Eco Plus</option>
+                <option>Business</option>
+                <option>Eco</option>
+            </select>
+
+            <label>Flight Distance</label>
+            <input id="Flight_distance" type="number" min="100" max="5000" value="460" required>
+
+            <h2>Service Ratings</h2>
+
+            <label>Inflight WiFi Services</label>
+            <input id="Inflight_Wifi_services" type="number" min="0" max="5" value="3" required>
+
+            <label>Departure/Arrival Time Convenient</label>
+            <input id="Departure_Arrival_time_convenient" type="number" min="0" max="5" value="4" required>
+
+            <label>Ease of Online Booking</label>
+            <input id="Ease_of_Online_booking" type="number" min="0" max="5" value="3" required>
+
+            <label>Gate Location</label>
+            <input id="Gate_location" type="number" min="0" max="5" value="1" required>
+
+            <label>Food and Drink</label>
+            <input id="Food_and_drink" type="number" min="0" max="5" value="5" required>
+
+            <label>Online Boarding</label>
+            <input id="Online_boarding" type="number" min="0" max="5" value="3" required>
+
+            <label>Seat Comfort</label>
+            <input id="Seat_comfort" type="number" min="0" max="5" value="5" required>
+
+            <label>Inflight Entertainment</label>
+            <input id="Inflight_entertainment" type="number" min="0" max="5" value="5" required>
+
+            <label>On-board Service</label>
+            <input id="On_board_service" type="number" min="0" max="4" value="4" required>
+
+            <label>Leg Room Service</label>
+            <input id="Leg_room_service" type="number" min="0" max="5" value="3" required>
+
+            <label>Baggage Handling</label>
+            <input id="Baggage_handling" type="number" min="1" max="5" value="4" required>
+
+            <label>Check-in Service</label>
+            <input id="Checkin_service" type="number" min="0" max="5" value="4" required>
+
+            <label>Inflight Service</label>
+            <input id="Inflight_service" type="number" min="0" max="5" value="5" required>
+
+            <label>Cleanliness</label>
+            <input id="Cleanliness" type="number" min="0" max="5" value="5" required>
+
+            <h2>Flight Delays</h2>
+
+            <label>Departure Delay in Minutes</label>
+            <input id="Departure_Delay_in_Minutes" type="number" min="0" max="1600" value="25" required>
+
+            <label>Arrival Delay in Minutes</label>
+            <input id="Arrival_Delay_in_Minutes" type="number" min="0" max="1600" value="18" required>
+
+            <button type="submit" id="predict-button">
+                Predict
+            </button>
+
+            <div id="result"></div>
+
+        </form>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
